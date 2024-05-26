@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Second Chance Adoption</title>
+        <link rel="stylesheet" href="Animal_Adoption.css">
+        <script type="text/javascript" src="Animal_Adoption.js"></script>
+    </head>
+    <body>
+        <%- include('header') %>
+        <div id="content">
+            <form onsubmit="return validateFindDog()">
+                <label for="dog_breed">What breed of dog are you looking for?</label>
+                <select id="dog_breed" name="dog_breed">
+                    <option>Does not matter</option>
+                    <option>German Shepherd</option>
+                    <option>Bulldog</option>
+                    <option>Labrador Retriever</option>
+                    <option>Golden Retriever</option>
+                    <option>French Bulldog</option>
+                    <option>Siberian Husky</option>
+                    <option>Beagle</option>
+                    <option>Alaskan Malamute</option>
+                    <option>Poodle</option>
+                    <option>Chihuahua</option>
+                    <option>Dachshund</option>
+                    <option>Border Collie</option>
+                    <option>Rottweiler</option>
+                    <option>Australian Shepherd</option>
+                    <option>Borzoi</option>
+                    <option>Corgi</option>
+                    <option>Dobermann</option>
+                    <option>Samoyed</option>
+                    <option>Goldendoodle</option>
+                    <option>pomeranian</option>
+                    <option>Yorkshire Terrier</option>
+                    <option>Shiba Inu</option>
+                    <option>Shih Tzu</option>
+                    <option>Chow Chow</option>
+                    <option>Airedale Terrier</option>
+                    <option>Boston Terrier</option>
+                    <option>Black Russian Terrier</option>
+                </select><br><br>
+                <label>What is the preferred age of the animal?</label>
+                <input id="age_0_to_5" name="dog_age" type="radio">
+                <label for="age_0_to_5">0 to 5 years old</label>
+                <input id="age_6_to_10" name="dog_age" type="radio">
+                <label for="age_6_to_10">6 to 10 years old</label>
+                <input id="age_10_and_up" name="dog_age" type="radio">
+                <label for="age_10_and_up">10 years old and up</label><br><br>
+                <label>What is the preferred sex of the animal?</label>
+                <input id="sex_male" name="dog_sex" type="radio">
+                <label for="sex_male">Female</label>
+                <input id="sex_female" name="dog_sex" type="radio">
+                <label for="sex_female">Male</label>
+                <input id="sex_does_not_matter" name="dog_sex" type="radio">
+                <label for="sex_does_not_matter">Does not matter</label><br><br>
+                <label for="temper">Does it need to get along well with other dogs, cats or children?</label>
+                <input id="temper" name="dog_temper" type="checkbox"><br><br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </form>
+        </div>
+        <%- include('footer') %>
+    </body>
+</html>

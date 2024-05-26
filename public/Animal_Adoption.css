@@ -1,0 +1,51 @@
+menu {
+    float: left;
+    list-style: none;
+    margin: 2%;
+    background-color: #f2e8df;
+}
+
+menu li {
+    padding: 10%;
+}
+
+menu li:hover {
+    background-color: #86a69d;
+}
+
+header {
+    color: #5c4b51;
+    width: 100%;
+}
+
+body {
+ margin: 0;
+}
+
+#content {
+    margin: 5%;
+    height: 100%;
+    min-height: 400px;
+}
+
+footer {
+    background-color: #f2e8df;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+.pet_picture {
+    height: 250px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pets {
+    margin-left: 30%;
+    margin-bottom: 5%;
+    border: solid;
+}

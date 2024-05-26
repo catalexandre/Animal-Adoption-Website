@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Second Chance Adoption</title>
+        <link rel="stylesheet" href="Animal_Adoption.css">
+        <script type="text/javascript" src="Animal_Adoption.js"></script>
+    </head>
+    <body>
+        <%- include('header') %>
+        <div id="content">
+            <form onsubmit="return validateGiveAwayPet()">
+                <label>Do you wish to give away a cat or a dog?</label>
+                <input id="cat" name="cat_or_dog" type="radio">
+                <label for="cat">Cat</label>
+                <input id="dog" name="cat_or_dog" type="radio">
+                <label for="dog">Dog</label><br><br>
+                <label for="cat_breed">What breed of animal is it?</label>
+                <select id="cat_breed" name="cat_breed">
+                    <option>Cat - Siamese</option>
+                    <option>Cat - Maine Coon</option>
+                    <option>Cat - Persian</option>
+                    <option>Cat - British Shorthair</option>
+                    <option>Cat - Sphynx</option>
+                    <option>Cat - American Shorthair</option>
+                    <option>Cat - Cornish Rex</option>
+                    <option>Cat - Devon Rex</option>
+                    <option>Cat - Russian Blue</option>
+                    <option>Cat - Oriental Shorthair</option>
+                    <option>Cat - American Curl</option>
+                    <option>Cat - Exotic Shorthair</option>
+                    <option>Dog - German Shepherd</option>
+                    <option>Dog - Bulldog</option>
+                    <option>Dog - Labrador Retriever</option>
+                    <option>Dog - Golden Retriever</option>
+                    <option>Dog - French Bulldog</option>
+                    <option>Dog - Siberian Husky</option>
+                    <option>Dog - Beagle</option>
+                    <option>Dog - Poodle</option>
+                    <option>Dog - Chihuahua</option>
+                    <option>Dog - Dachshund</option>
+                    <option>Dog - Border Collie</option>
+                    <option>Dog - Rottweiler</option>
+                    <option>Dog - Australian Shepherd</option>
+                    <option>Dog - Borzoi</option>
+                    <option>Dog - Corgi</option>
+                    <option>Dog - Dobermann</option>
+                    <option>Dog - Samoyed</option>
+                    <option>Dog - Goldendoodle</option>
+                    <option>Dog - pomeranian</option>
+                    <option>Dog - Yorkshire Terrier</option>
+                    <option>Dog - Shiba Inu</option>
+                    <option>Dog - Shih Tzu</option>
+                    <option>Dog - Chow Chow</option>
+                    <option>Dog - Airedale Terrier</option>
+                    <option>Dog - Boston Terrier</option>
+                    <option>Dog - Black Russian Terrier</option>
+                </select><br><br>
+                <label>What is the age of the animal?</label>
+                <input id="age_0_to_5" name="animal_age" type="radio">
+                <label for="age_0_to_5">0 to 5 years old</label>
+                <input id="age_6_to_10" name="animal_age" type="radio">
+                <label for="age_6_to_10">6 to 10 years old</label>
+                <input id="age_10_and_up" name="animal_age" type="radio">
+                <label for="age_10_and_up">10 years old and up</label><br><br>
+                <label>What is the preferred sex of the animal?</label>
+                <input id="sex_male" name="animal_sex" type="radio">
+                <label for="sex_male">Female</label>
+                <input id="sex_female" name="animal_sex" type="radio">
+                <label for="sex_female">Male</label>
+                <input id="sex_does_not_matter" name="animal_sex" type="radio">
+                <label for="sex_does_not_matter">Does not matter</label><br><br>
+                <label>Is the animal suitable for a family with small children?</label>
+                <input id="temper_children_yes" name="temper_children" type="radio">
+                <label for="temper_children_yes">Yes</label>
+                <input id="temper_children_no" name="temper_children" type="radio">
+                <label for="temper_children_no">No</label>
+                <input id="temper_children_unknown" name="temper_children" type="radio">
+                <label for="temper_children_unknown">Unknown</label><br><br>
+                <label>Does the animal go along well with other cats?</label>
+                <input id="temper_cat_yes" name="temper_cat" type="radio">
+                <label for="temper_cat_yes">Yes</label>
+                <input id="temper_cat_no" name="temper_cat" type="radio">
+                <label for="temper_cat_no">No</label>
+                <input id="temper_cat_unknown" name="temper_cat" type="radio">
+                <label for="temper_cat_unknown">Unknown</label><br><br>
+                <label>Does the animal go along well with other dogs?</label>
+                <input id="temper_dog_yes" name="temper_dog" type="radio">
+                <label for="temper_dog_yes">Yes</label>
+                <input id="temper_dog_no" name="temper_dog" type="radio">
+                <label for="temper_dog_no">No</label>
+                <input id="temper_dog_unknown" name="temper_dog" type="radio">
+                <label for="temper_dog_unknown">Unknown</label><br><br>
+                <label for="animal_comments">Please write a good description for your animal here:</label><br>
+                <textarea id="animal_comments" name="animal_comments"></textarea><br><br>
+                <label for="owner_name">What is the owner's name? (First and last name)</label>
+                <input id="owner_name" name="owner_name"><br><br>
+                <label for="owner_email">What is the owner's Email?</label>
+                <input id="owner_email" name="owner_email" type="text">
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </form>
+        </div>
+        <%- include('footer') %>
+    </body>
+</html>
